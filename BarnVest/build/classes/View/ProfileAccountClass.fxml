@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfileAccountClassController">
+   <children>
+      <Label layoutX="42.0" layoutY="37.0" text="PROFILE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="21.0" layoutY="372.0" mnemonicParsing="false" onAction="#handleButtonBack" style="-fx-background-color: #438A5E;" text="Back" textFill="WHITE" />
+      <TextField fx:id="tfNamaPanjang" layoutX="139.0" layoutY="72.0" />
+      <Label layoutX="23.0" layoutY="76.0" text="Nama Panjang" />
+      <Label layoutX="23.0" layoutY="118.0" text="Username" />
+      <TextField fx:id="tfUserName" layoutX="139.0" layoutY="114.0" />
+      <Label layoutX="22.0" layoutY="160.0" text="Jenis Kelamin" />
+      <TextField fx:id="tfJenisKelamin" layoutX="139.0" layoutY="156.0" />
+      <Label layoutX="25.0" layoutY="203.0" text="Status" />
+      <TextField fx:id="tfStatus" layoutX="139.0" layoutY="199.0" />
+      <Label layoutX="28.0" layoutY="248.0" text="No.KTP/KK" />
+      <TextField fx:id="tfNoKTPorKK" layoutX="139.0" layoutY="244.0" />
+      <Label layoutX="28.0" layoutY="291.0" text="Email" />
+      <TextField fx:id="tfEmail" layoutX="139.0" layoutY="287.0" />
+      <Label layoutX="350.0" layoutY="76.0" text="No.Telp" />
+      <TextField fx:id="tfNoTelp" layoutX="463.0" layoutY="72.0" />
+      <Label layoutX="350.0" layoutY="109.0" text="Jumlah Investasi" />
+      <TextField fx:id="tfJumlahInvestasi" layoutX="463.0" layoutY="105.0" />
+      <AnchorPane layoutX="-1.0" prefHeight="30.0" prefWidth="745.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="31.0" layoutY="-2.0" text="Barnvest" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

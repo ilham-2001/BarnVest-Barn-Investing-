@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportClassController">
+   <children>
+      <AnchorPane prefHeight="30.0" prefWidth="774.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="31.0" layoutY="-2.0" text="Barnvest" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Circle fill="#ededed" layoutX="17.0" layoutY="15.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="23.0" layoutY="506.0" mnemonicParsing="false" onAction="#handleButtonBack" style="-fx-background-color: #438A5E;" text="Back" textFill="WHITE" />
+      <TableView fx:id="tvReport" layoutX="10.0" layoutY="83.0" prefHeight="349.0" prefWidth="754.0">
+        <columns>
+          <TableColumn fx:id="tcnama" prefWidth="92.0" text="Nama" />
+          <TableColumn fx:id="tcAlamat" prefWidth="106.0" text="Alamat" />
+            <TableColumn fx:id="tcTerkumpul" prefWidth="110.0" text="Dana Terkumpul" />
+            <TableColumn fx:id="tcJenisHwn" prefWidth="71.0" text="Jenis" />
+            <TableColumn fx:id="tcJumlahHwn" prefWidth="75.0" text="Jumlah" />
+            <TableColumn fx:id="tcTanggal" prefWidth="84.0" text="Tanggal" />
+            <TableColumn fx:id="tcTarget" prefWidth="84.0" text="Target" />
+            <TableColumn fx:id="tcStatus" prefWidth="131.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="637.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleButtonEdit" style="-fx-background-color: #1b6ca8;" text="Edit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="689.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleButtonDelete" style="-fx-background-color: #fa1616;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="319.0" layoutY="41.0" text="Livestock Data">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="23.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleButtonRefresh" text="Refresh" />
+      <Button layoutX="568.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleButtonGraph" text="Graph" />
+   </children>
+</AnchorPane>

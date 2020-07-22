@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InvestController">
+   <children>
+      <AnchorPane prefHeight="30.0" prefWidth="745.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="31.0" layoutY="-2.0" text="Barnvest" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="25.0" layoutY="461.0" mnemonicParsing="false" onAction="#handleButtonBack" style="-fx-background-color: #438A5E;" text="Back" textFill="WHITE" />
+      <TextField fx:id="tfNama" layoutX="7.0" layoutY="80.0" prefHeight="25.0" prefWidth="183.0" promptText="Nama" />
+      <Button layoutX="143.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleButtonInvest" style="-fx-background-color: #438A5E;" text="invest" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="tfJumlahInvest" layoutX="41.0" layoutY="116.0" prefHeight="25.0" prefWidth="149.0" promptText="Jumlah investasi" />
+      <TextField layoutX="7.0" layoutY="116.0" prefHeight="25.0" prefWidth="31.0" text="Rp." />
+      <TableView fx:id="tvInvestasi" layoutX="196.0" layoutY="79.0" prefHeight="413.0" prefWidth="535.0">
+        <columns>
+          <TableColumn fx:id="tcnama" prefWidth="107.0" text="Peternakan" />
+          <TableColumn fx:id="tcTerkumpul" prefWidth="121.0" text="Dana Terkumpul" />
+            <TableColumn fx:id="tcTarget" prefWidth="88.0" text="Target" />
+            <TableColumn fx:id="tcAlamat" prefWidth="110.0" text="Alamat" />
+            <TableColumn fx:id="tcStatus" prefWidth="107.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="359.0" layoutY="54.0" text="Pick the following barn you want to invest">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

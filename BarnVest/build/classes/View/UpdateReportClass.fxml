@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="363.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateReportClassController">
+   <children>
+      <AnchorPane prefHeight="30.0" prefWidth="366.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="31.0" layoutY="-2.0" text="Barnvest" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Circle fill="#ededed" layoutX="17.0" layoutY="15.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="tfNama" layoutX="109.0" layoutY="116.0" promptText="Nama Peternakan" />
+      <TextField fx:id="tfTarget" layoutX="109.0" layoutY="153.0" promptText="Target" />
+      <TextField fx:id="tfAlamat" layoutX="109.0" layoutY="188.0" promptText="Alamat" />
+      <Button layoutX="154.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleButtonUpdate" style="-fx-background-color: #438A5E;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="153.0" layoutY="56.0" text="Update">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="120.0" text="Nama" />
+      <Label layoutX="69.0" layoutY="157.0" text="Target" />
+      <Label layoutX="67.0" layoutY="192.0" text="Alamat" />
+      <ChoiceBox fx:id="cbxStatus" layoutX="108.0" layoutY="222.0" prefWidth="150.0" />
+      <Label layoutX="70.0" layoutY="226.0" text="Status" />
+   </children>
+</AnchorPane>
